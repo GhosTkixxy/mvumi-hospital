@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - MediCare Hospital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0d47a1
+            colour;blue;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #0d47a1;
+            color: white;
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h2 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+
+        .sidebar nav a {
+            display: block;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .sidebar nav a:hover {
+            background-color: #00bcd4;
+        }
+
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            background-color: #0d47a1
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem 0;
+            background: #0d47a1;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card i {
+            font-size: 3rem;
+            color: #00bcd4;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #0d47a1;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>MediCare</h2>
+        <nav>
+            <a href="mvumihospital.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="Doctors.html">Doctors</a>
+            <a href="appointments.html">Appointments</a>
+            <a href="contacts.html">Contact</a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <header class="header">
+            <h1>Our Services</h1>
+            <p>Explore the wide range of healthcare services we offer.</p>
+        </header>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Cardiology</h3>
+                <p>Advanced heart care with state-of-the-art technology.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-bone"></i>
+                <h3>Orthopedics</h3>
+                <p>Comprehensive bone and joint care for all ages.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-baby"></i>
+                <h3>Pediatrics</h3>
+                <p>Specialized care for your little ones.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-brain"></i>
+                <h3>Neurology</h3>
+                <p>Expert care for brain and nervous system disorders.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-eye"></i>
+                <h3>Ophthalmology</h3>
+                <p>Clear vision and eye health services.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tooth"></i>
+                <h3>Dentistry</h3>
+                <p>Complete dental care for a healthy smile.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
